@@ -1,0 +1,46 @@
+.variant {
+    position: relative;
+    min-height: 600px;
+    background-color: #f0efee;
+    background-image: url("../img/Layer 2.png");
+    background-repeat: no-repeat;
+    background-position: -170px -80px;
+    z-index: 1;
+}
+
+.variant__wrapper {
+    padding: 135px 0 0 568px;
+}
+
+.variant__intro {
+    margin: 0;
+    font-size: 30px;
+    color: #623232;
+}
+
+.variant__name {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 700;
+    color: #623232;
+}
+
+.variant__slogan {
+    margin: 0;
+    font-size: 40px;
+    color: #ff7373;
+}
+
+.variant__desc{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #623232;
+}
+
+.variant__link {
+    padding: 15px 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #ff7373;
+}

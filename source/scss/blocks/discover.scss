@@ -1,0 +1,59 @@
+.discover__wrapper {
+    min-height: 540px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discover__arrivals {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.discover__up {
+    width: 400px;
+    min-height: 205px;
+    padding: 50px 0 0 140px;
+    background-color: $bg-col;
+    text-align: center;
+}
+
+.discover__intro {
+    margin: 0;
+    font-size: 30px;
+    color: $cl-white;
+}
+
+.discover__title {
+    margin: 0 0 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $cl-white;
+}
+
+.discover__link {
+    margin: 0;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $cl-white;
+    background-color: $bg-brown;
+}
+
+.discover__down {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discover__athletes {
+    width: 255px;
+    min-height: 255px;
+}
+
+.discover__premium {
+    width: 255px;
+    min-height: 255px;
+    background-color: #cecece;
+}

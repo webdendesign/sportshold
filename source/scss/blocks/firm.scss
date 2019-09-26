@@ -1,0 +1,28 @@
+.firm {
+    margin: 95px 0;
+}
+
+.firm__wrapper {
+    padding: 0 30px;
+}
+
+.firm__list {
+    @include list;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.firm__item {
+    &--nike {
+        padding-top: 10px;
+    }
+
+    &--asics {
+        padding-top: 10px;
+    }
+
+    &--fild {
+        padding-top: 12px;
+    }
+}

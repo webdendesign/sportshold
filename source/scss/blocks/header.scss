@@ -1,0 +1,59 @@
+.header {
+    color: $cl-white;
+}
+
+.header__up {
+    min-height: 50px;
+    background: #472424;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__list-company {
+    @include list;
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__item {
+    padding-top: 15px;
+}
+
+.header__list-user {
+    @include list;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__down {
+    position: relative;
+    min-height: 75px;
+    background-color: #623232;
+    color: $cl-white;
+}
+
+.header__logo {
+    margin-top: 20px;
+    width: 182px;
+    height: 24px;
+}
+
+.header__list-menu {
+    @include list;
+    width: 590px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__init {
+    font-size: 18px;
+
+    &--active {
+        color: #ff7373;
+    }
+}

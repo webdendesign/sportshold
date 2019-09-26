@@ -1,0 +1,27 @@
+.product__list {
+    @include list;
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    margin: 40px auto;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #bdb9b5;
+}
+
+.product__item--active {
+    color: #623232;
+    font-weight: 700;
+}
+
+.product__list-new {
+    @include list;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product__item-new {
+    width: 255px;
+    min-height: 350px;
+}
