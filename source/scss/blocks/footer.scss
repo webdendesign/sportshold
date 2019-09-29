@@ -1,0 +1,334 @@
+
+
+.footer__up {
+    min-height: 200px;
+    background-color: $bg-col;
+}
+
+.footer__wrapper-up {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.footer__left {
+    position: relative;
+    padding-left: 90px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 15px;
+        left: 0;
+        width: 60px;
+        height: 42px;
+        background-image: url("../img/mail.png");
+    }
+}
+
+.footer__title {
+    margin: 0 0 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $cl-white;
+}
+
+.footer__intro {
+    margin: 0;
+    font-size: 20px;
+    color: $cl-white;
+}
+
+.footer__link {
+    display: flex;
+    width: 210px;
+    height: 48px;
+    font-size: 20px;
+    background-color: $bg-brown;
+    color: $cl-white;
+}
+
+.footer__middle {
+    background-color: $bg-brown;
+}
+
+.footer__list-shop {
+    position: relative;
+    @include list;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: $cl-white;
+
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #795151;
+    }
+}
+
+.footer__item-shop {
+    width: 160px;
+    min-height: 92px;
+    padding-top: 115px;
+    font-size: 20px;
+    text-align: center;
+
+    &--free {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50px;
+            left: 57px;
+            width: 40px;
+            height: 40px;
+            background-image: url("../img/free.png");
+        }
+    }
+
+    &--money {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50px;
+            left: 57px;
+            width: 40px;
+            height: 40px;
+            background-image: url("../img/money.png");
+        }
+    }
+
+    &--support {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50px;
+            left: 57px;
+            width: 40px;
+            height: 40px;
+            background-image: url("../img/support.png");
+        }
+    }
+
+    &--lowest {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50px;
+            left: 57px;
+            width: 40px;
+            height: 40px;
+            background-image: url("../img/lowest.svg");
+        }
+    }
+
+    &--exclusive {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50px;
+            left: 57px;
+            width: 40px;
+            height: 40px;
+            background-image: url("../img/exclusive.png");
+        }
+    }
+
+    &--delivery {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 56px;
+            left: 57px;
+            width: 40px;
+            height: 28px;
+            background-image: url("../img/delivery.png");
+        }
+    }
+}
+
+.footer__list-help {
+    @include list;
+    display: flex;
+    justify-content: space-between;
+    min-height: 205px;
+    padding: 100px 0;
+}
+
+.footer__list-call {
+    @include list;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.footer__item-call {
+    min-height: 55px;
+    margin-bottom: 20px;
+    padding-left: 75px;
+
+    &--phone {
+        position: relative;
+
+        &::before {
+            z-index: 1;
+            position: absolute;
+            content: "";
+            top: 18px;
+            left: 18px;
+            width: 20px;
+            height: 20px;
+            background-image: url("../img/phone.png");
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 55px;
+            height: 55px;
+            background: $bg-col;
+
+        }
+    }
+
+    &--email {
+        position: relative;
+
+        &::before {
+            z-index: 1;
+            position: absolute;
+            content: "";
+            top: 20px;
+            left: 18px;
+            width: 20px;
+            height: 14px;
+            background-image: url("../img/mail_footer.png");
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 55px;
+            height: 55px;
+            background: $bg-col;
+        }
+    }
+
+    &--address {
+        position: relative;
+
+        &::before {
+            z-index: 1;
+            position: absolute;
+            content: "";
+            top: 17px;
+            left: 17px;
+            width: 20px;
+            height: 20px;
+            background-image: url("../img/address.png");
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 55px;
+            height: 55px;
+            background: $bg-col;
+        }
+    }
+}
+
+.footer__phone {
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $bg-col;
+}
+
+.footer__phone-desc {
+    margin: 0;
+    color: $cl-white;
+}
+
+.footer__list-nav {
+    @include list;
+    width: 160px;
+    color: $cl-white;
+
+}
+
+.footer__list-cat {
+    @include list;
+    width: 160px;
+    color: $cl-white;
+}
+
+.footer__list-sale {
+    @include list;
+    width: 160px;
+    color: $cl-white;
+}
+
+.footer__list-support {
+    @include list;
+    width: 160px;
+    color: $cl-white;
+}
+
+.footer__categories,
+.footer__navigation,
+.footer__sales,
+.footer__support {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $bg-col;
+}
+
+.footer__item-nav,
+.footer__item-cat,
+.footer__item-sale,
+.footer__item-support {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.footer__down {
+    min-height: 500px;
+    background-color: $bg-brown;
+}
+
+.footer__wrapper-down {
+    min-height: 116px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__list-social {
+    @include list;
+}

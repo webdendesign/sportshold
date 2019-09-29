@@ -1,0 +1,107 @@
+.rating {
+    min-height: 570px;
+    background-image: url("../img/glenn.jpg");
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-size: 4076px 2712px; 
+    // background: #623232;
+    // opacity: 0.2;
+}
+
+.rating__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.rating__list {
+    @include list;
+    width: 525px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating__item {
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $cl-white;
+    text-align: center;
+
+    &--christopher {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 25px;
+            width: 105px;
+            height: 20px;
+            background-image: url("../img/star.png");
+            background-repeat: repeat;
+            background-position: 0 0;
+        }
+    }
+
+    &--andrew {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 30px;
+            width: 84px;
+            height: 20px;
+            background-image: url("../img/star.png");
+            background-repeat: repeat;
+            background-position: 0 0;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 114px;
+            width: 21px;
+            height: 20px;
+            background-image: url("../img/starempty.png");
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+    }
+
+    &--sandra {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 10px;
+            width: 63px;
+            height: 20px;
+            background-image: url("../img/star.png");
+            background-repeat: repeat;
+            background-position: 0 0;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 73px;
+            width: 42px;
+            height: 20px;
+            background-image: url("../img/starempty.png");
+            background-repeat: repeat;
+            background-position: 0 0;
+        }
+    }
+}
+
+.rating__name {
+    margin: 0;
+}
