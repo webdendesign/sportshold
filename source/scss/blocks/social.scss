@@ -1,0 +1,38 @@
+.social__list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 177px;
+    @include list();
+  }
+  
+  .social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+  }
+
+  .social__twitter,
+  .social__facebook,
+  .social__ln,
+  .social__youtube {
+      fill: $cl-white;
+  }
+
+  .social__twitter:hover,
+  .social__facebook:hover,
+  .social__ln:hover,
+  .social__youtube:hover {
+      fill: $bg-col;
+  }
+
+  .social__twitter:active,
+  .social__facebook:active,
+  .social__ln:active,
+  .social__youtube:active {
+      opacity: 0.2;
+  }
+  

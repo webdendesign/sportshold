@@ -41,6 +41,8 @@
 
 .footer__link {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 210px;
     height: 48px;
     font-size: 20px;
@@ -180,6 +182,9 @@
 }
 
 .footer__item-call {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     min-height: 55px;
     margin-bottom: 20px;
     padding-left: 75px;
@@ -304,7 +309,8 @@
 .footer__support {
     margin: 0;
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
     text-transform: uppercase;
     color: $bg-col;
 }
@@ -314,21 +320,23 @@
 .footer__item-sale,
 .footer__item-support {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .footer__down {
-    min-height: 500px;
     background-color: $bg-brown;
 }
 
 .footer__wrapper-down {
-    min-height: 116px;
+    min-height: 115px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+    border-top: 1px solid #795151;
 }
 
-.footer__list-social {
-    @include list;
+.footer__rights {
+    font-size: 16px;
+    color: $cl-white;
 }

@@ -1,7 +1,68 @@
+.discover {
+    margin: 50px 0;
+    font-size: 30px;
+    color: $cl-white;
+}
+
 .discover__wrapper {
     min-height: 540px;
     display: flex;
     justify-content: space-between;
+}
+
+.discover__nike {
+    position: relative;
+    width: 540px;
+    min-height: 450px;
+    padding: 40px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/Nike_Kyrie.jpg");
+    background-repeat: no-repeat;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 50px;
+        left: 50px;
+        width: 32px;
+        height: 48px;
+        background-image: url("../img/sport.svg");
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 229px;
+        left: -17px;
+        width: 29px;
+        height: 56px;
+        background-image: url("../img/Nike_Kyrie_Hero_Pair.png");
+    }
+
+}
+
+.discover__new {
+    margin: 0;
+    font-weight: 400;
+}
+
+.discover__kyrie {
+    margin: 5px 0 0;
+    text-transform: uppercase;
+    color: $cl-green;
+    font-weight: bold;
+}
+
+.discover__link-nike {
+    margin-top: auto;
+    padding: 15px 27px;
+    font-size: $fn-sz;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: $cl-green;
 }
 
 .discover__arrivals {
@@ -45,15 +106,45 @@
 .discover__down {
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .discover__athletes {
     width: 255px;
     min-height: 255px;
+    background-image: url("../img/rectangle.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.discover__slogan {
+    margin: 140px 0 0;
+}
+
+.discover__text {
+    margin: 5px 0 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $bg-col;
 }
 
 .discover__premium {
     width: 255px;
     min-height: 255px;
     background-color: #cecece;
+    background-image: url("../img/Layer11.png");
+    background-repeat: no-repeat;
+    background-position: center bottom; 
+}
+
+.discover__feel {
+    margin: 30px 0 0;
+    color: #6b7072;
+}
+
+.discover__prime {
+    margin: 5px 0 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $cl-white; 
 }
