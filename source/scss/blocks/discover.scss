@@ -1,5 +1,5 @@
 .discover {
-    margin: 50px 0;
+    margin: 50px 0 90px;
     font-size: 30px;
     color: $cl-white;
 }
@@ -72,11 +72,24 @@
 }
 
 .discover__up {
+    position: relative;
     width: 400px;
     min-height: 205px;
     padding: 50px 0 0 140px;
     background-color: $bg-col;
     text-align: center;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: -22px;
+        left: -15px;
+        width: 213px;
+        height: 277px;
+        background-image: url("../img/layer_1.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
 }
 
 .discover__intro {
